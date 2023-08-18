@@ -7,7 +7,7 @@ app.use( bodyParser.urlencoded({ extended : true }) );
 const router = require("./src/routers/router")(app);
 app.use("/", router);
 
-app.get("/", (req, res)=> res.send("서버 연동") );
+//app.get("/", (req, res)=> res.send("서버 연동") );
 
 app.set("views", __dirname+"/src/views");
 app.set("view engine","ejs");

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 리스트</title>
+    <style>
+        header {  
+            background:rgb(197, 197, 197); 
+            padding: 0px; margin: 0px;
+            display: flex;
+            position: fixed;
+            top: 0; left: 0; right: 0;
+        }
+
+        .headerbox{
+            background:rgb(197, 197, 197);
+            display: flex;
+            position: fixed;
+            width: 200px; height: 1000px;
+            top: 86px; left: 0;
+        }
+
+        .hst{
+            position : absolute; text-decoration: none; color:black;
+            outline: none; left: 90%; top: 60%;
+        }
+
+        .box{
+            visibility: visible;
+            position: absolute; height: 75%; width: 60%;
+            top: 18%; left: 28%;
+            background: rgb(197, 197, 197);
+        }
+
+        .textInsert{
+            position: relative;
+            left: 5%; top: 4%;
+        }
+
+        .btnWriter1{
+            position: relative; width: 15%;
+            top: 5%; left: 81%;
+        }
+
+        .btnWriter2{
+            position: absolute; left: 90%; top: 18%;
+            background-color: rgb(230, 230, 230); width: 80px; height:30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="position: relative; left: 45px;">
+            MESM
+        </h1>
+        
+        <a href="mypage" class="hst">마이페이지</a>
+    </header>
+
+    <div class="headerbox">
+        <h2 style="position: relative; left: 55px;">
+            게시판
+        </h2>
+    </div>
+    
+    <div class="box">
+        <textarea class="textInsert" cols="75" rows="13"></textarea>
+        <button class="btnWriter1" onclick="">삭제</button>
+    </div>
+
+    <button class="btnWriter2" onclick="">글작성</button>
+</body>
+</html>

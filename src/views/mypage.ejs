@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <style>
+        header {  
+            background:rgb(197, 197, 197); 
+            padding: 0px; margin: 0px;
+            display: flex;
+            position: fixed;
+            top: 0; left: 0; right: 0;
+        }
+
+        body {
+        padding-top: 50px;
+        }
+
+        .tou1 {
+            margin-top: 20px; margin-left: 10px;
+        }
+
+        .tou1:hover {
+            background-color: gray;
+        }
+
+        .tou2 {
+            margin-top: 20px; margin-left: 10px;
+        }
+
+        .tou2:hover {
+            background-color: gray;
+        }
+        .tou3 {
+            margin-top: 20px; margin-left: 10px;
+        }
+
+        .tou3:hover {
+            background-color: gray;
+        }
+        .tou4 {
+            margin-top: 20px; margin-left: 10px;
+        }
+
+        .tou4:hover {
+            background-color: gray;
+        }
+
+        .hst{
+            position : absolute; text-decoration: none; color:black;
+            outline: none; left: 90%; top: 60%;
+        }
+
+
+        .boxtop{
+            padding-left: 25px; padding-top: 20px;
+        }
+
+        .box{
+            display: none;
+            position: absolute; height: 30%; width: 50%;
+            top: 18%; left: 28%;
+            background: rgb(197, 197, 197);
+        }
+
+        .box2{
+            display: none;
+            position: absolute; height: 18%; width: 50%;
+            top: 18%; left: 28%;
+            background: rgb(197, 197, 197);
+        }
+
+        .box3{
+            display: none;
+            position: absolute; height: 18%; width: 50%;
+            top: 18%; left: 28%;
+            background: rgb(197, 197, 197);
+        }
+
+        .box4{
+            display: none;
+            position: absolute; height: 15%; width: 50%;
+            top: 18%; left: 28%;
+            background: rgb(197, 197, 197);
+        }
+
+
+        .text{
+            padding-top: 10px; padding-left: 10px;
+            font-size: large;
+        }
+
+
+        .insBtn1{
+            display: none; position: absolute;
+            box-shadow: none; border: solid rgb(197, 197, 197);
+            background-color: rgb(197, 197, 197);
+            height: 3%; width: 8%;
+            top: 37%; left: 60%;
+        }
+
+        .delBtn1{
+            display: none; position: absolute;
+            box-shadow: none; border: solid rgb(197, 197, 197);
+            background-color: rgb(197, 197, 197);
+            height: 3%; width: 8%;
+            top: 37%; left: 69%;
+        }
+
+        .delBtn2{
+            display: none; position: absolute;
+            box-shadow: none; border: solid rgb(197, 197, 197);
+            background-color: rgb(197, 197, 197);
+            height: 3%; width: 8%;
+            top: 37%; left: 69%;
+        }
+
+        .delBtn3{
+            display: none; position: absolute; 
+            box-shadow: none; border: solid rgb(197, 197, 197);
+            height: 5%; width: 50%; left: 28%;
+            background-color: rgb(197, 197, 197);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="position: relative; left: 45px;">
+            MESM
+        </h1>
+        <a href="mypage" class="hst"> 마이페이지</a>
+    </header>
+
+    <div style="position: relative; top: 10px;">
+        <p style="font-size: 30px;">마이페이지</p>
+        <div style="width: 190px;">
+            <div class="tou1" style="font-size: 19px;">개인정보수정</div>
+            <div class="tou2" style="font-size: 19px;">내 식물 관리</div>
+            <div class="tou3" style="font-size: 19px;">내 게시글 관리</div>
+            <div class="tou4" style="font-size: 19px;">회원탈퇴</div>
+        </div>
+    </div>
+
+    <div class="box" id="box1">
+        <div class="boxtop">이름</div>
+        <div style="position: relative; text-align: center; 
+        width: 15%; bottom:7%; left: 75%;">최성빈</div>
+
+        <div class="boxtop">아이디</div>
+        <div style="position: relative; text-align: center;
+        width: 15%; bottom:7%; left: 75%;">ChoiSeongBin</div>
+
+        <div class="boxtop">비밀번호</div>
+        <input type="text" style="position: relative;
+        bottom:7%; left: 70%; height: 23px; width: 25%;">
+
+        <button style="position: relative; box-shadow: none; background-color: gray;
+        width: 45%; height: 12%; top: 25%; font-size: medium;" 
+        onclick="">수정완료</button>
+    </div>
+
+
+    <div class="box2">
+        <div class="text">식물 리스트(이름)</div>
+    </div>
+        <button class="insBtn1" onclick="">추가</button>
+        <button class="delBtn1" onclick="">삭제</button>
+
+
+    <div class="box3">
+        <div class="text">내 게시물 리스트</div>
+    </div>
+        <button class="delBtn2" onclick="">삭제</button>
+
+
+    <div class="box4">
+        <div class="text">비밀번호 입력</div>
+        <input style="position: absolute; width: 80%; height: 20%; top:50%; left:10%;" 
+        type="text">
+    </div>
+        <button class="delBtn3" onclick="">회원탈퇴</button>   
+</body>
+</html>
